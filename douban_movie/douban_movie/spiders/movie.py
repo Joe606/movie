@@ -29,7 +29,7 @@ class Toscrapemovie(scrapy.Spider):
         '''
         for url_next in selector.xpath('@href'):
             yield response.follow(url_next,callback=self.next_parse)
-        print('进入下一页')
+        print('next page')
         '''
         
         
